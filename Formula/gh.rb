@@ -11,6 +11,6 @@ class Gh < Formula
 
   test do
     help_text = shell_output("#{bin}/gh --help")
-    assert_includes "Usage:", help_text
+    assert_includes help_text, "Usage:"
   end
 end
