@@ -7,6 +7,12 @@ brew tap github/gh
 brew install gh --HEAD
 ```
 
+You are now ready to use `gh`!
+
+```sh
+gh help
+```
+
 To stay up to date with `gh` development:
 
 ```sh
