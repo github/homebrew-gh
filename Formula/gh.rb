@@ -7,6 +7,8 @@ class Gh < Formula
   def install
     system "go", "build", "-mod=vendor", "-o", "gh", "."
     bin.install "gh"
+    (bash_completion/"gh.sh").write `#{bin}/gh completion -s bash`
+    (zsh_completion/"_gh").write `#{bin}/gh completion -s zsh`
   end
 
   test do
