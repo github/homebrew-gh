@@ -1,6 +1,6 @@
 class Gh < Formula
   desc "GitHub CLI"
-  head "https://github.com/github/gh-cli.git", :branch => "prototype"
+  head "https://github.com/github/gh-cli.git", :branch => "master"
 
   depends_on "go" => :build
 
