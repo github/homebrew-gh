@@ -3,8 +3,7 @@
 First-time:
 
 ```sh
-brew tap github/gh
-brew install gh --HEAD
+brew install github/gh/gh --HEAD
 ```
 
 That's it. You are now ready to use `gh`. 🥳
