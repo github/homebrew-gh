@@ -5,8 +5,8 @@ class Gh < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", "-o", "gh", "."
-    bin.install "gh"
+    system "make"
+    bin.install "bin/gh"
     (bash_completion/"gh.sh").write `#{bin}/gh completion -s bash`
     (zsh_completion/"_gh").write `#{bin}/gh completion -s zsh`
   end
