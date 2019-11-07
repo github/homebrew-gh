@@ -1,7 +1,7 @@
 class Gh < Formula
   desc "GitHub CLI"
-  url "https://github.com/github/homebrew-gh/releases/download/v0.0.193/gh-cli_0.0.193_darwin_amd64.tar.gz"
-  sha256 "f699ad4f7005dbb89395bf967d96fa621bb408379f618a7e7187a032e5a65ae1"
+  url "https://github.com/github/homebrew-gh/releases/download/v0.0.195/gh-cli_0.0.195_darwin_amd64.tar.gz"
+  sha256 "82f8c50415d14851d3fb1a800ffd047f181880deb5450acd67bc7594fa2a19ea"
 
   bottle :unneeded
 
