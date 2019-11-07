@@ -3,7 +3,7 @@
 First-time:
 
 ```sh
-brew install github/gh/gh --HEAD
+brew install github/homebrew-gh/gh
 ```
 
 That's it. You are now ready to use `gh`. 🥳
@@ -24,9 +24,7 @@ Available Commands:
 To stay up to date with `gh` development:
 
 ```sh
-brew upgrade gh --fetch-HEAD
+brew upgrade gh
 ```
-
-Until `gh` gets on a release schedule, the `--fetch-HEAD` argument is unfortunately necessary to make sure that the project is rebuilt from the latest development version.
 
 Thank you for testing GitHub CLI! 🌟
