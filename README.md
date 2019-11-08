@@ -1,9 +1,9 @@
 # Homebrew tap for GitHub CLI
 
-First-time:
+Installation:
 
 ```sh
-brew install github/homebrew-gh/gh
+brew install github/gh/gh
 ```
 
 That's it. You are now ready to use `gh`. 🥳
@@ -21,10 +21,19 @@ Available Commands:
   pr          Work with pull requests
 ```
 
-To stay up to date with `gh` development:
+Thank you for trying out GitHub CLI! 🌟
 
-```sh
-brew upgrade gh
+### Development version (restricted access)
+
+You can get access to features that are not yet in the stable release by
+building the development version:
+
+```
+brew install github/gh/gh --HEAD
 ```
 
-Thank you for testing GitHub CLI! 🌟
+To upgrade it:
+
+```
+brew upgrade gh --fetch-HEAD
+```
