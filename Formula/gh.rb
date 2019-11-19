@@ -11,7 +11,7 @@ class Gh < Formula
   end
 
   head do
-    url "https://github.com/github/gh-cli.git", :branch => "prototype"
+    url "https://github.com/github/gh-cli.git", :branch => "master"
     depends_on "go"
   end
 
