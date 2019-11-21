@@ -1,11 +1,11 @@
 class Gh < Formula
   desc "GitHub CLI"
   homepage "https://github.com/github/gh-cli"
-  version "0.2.2"
+  version "6.6.6"
 
   if OS.mac?
-    url "https://github.com/github/homebrew-gh/releases/download/v0.2.2/gh_0.2.2_macOS_amd64.tar.gz"
-    sha256 "8a24d8f4b37823c33273adf7f07df3eaf7ab7cd3c32d36f4885702f56abfc3ba"
+    url "https://github.com/github/homebrew-gh/releases/download/v6.6.6/gh_6.6.6_macOS_amd64.tar.gz"
+    sha256 "bc402bb0e88c93ea1fc978ceed427eff216784f3cc0cd838f97e34658e110f4e"
   elsif OS.linux?
     # TODO
   end
