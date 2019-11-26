@@ -24,7 +24,7 @@ _(Uninstall with `sudo yum remove gh`)_
 
 1. Download the `_linux_amd64.tar.gz` file from the [releases page](https://github.com/github/homebrew-gh/releases/latest)
 2. `tar -xf gh_0.2.2_linux_amd64.tar.gz`, changing version number accordingly
-3. `chmod +x gh` ensure the binary executable
+3. `chmod +x gh` ensure the binary is executable
 4. Copy the uncompressed `gh` somewhere on your `$PATH` (e.g. `sudo cp gh /usr/local/bin/`)
 
 
