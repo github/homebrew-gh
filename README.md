@@ -1,7 +1,7 @@
 # Public releases for GitHub CLI
 
-## Install for Mac
-### Homebrew tap
+## Install for macOS
+### Homebrew
 To install:
 ```sh
 brew install github/gh/gh
@@ -10,6 +10,16 @@ To upgrade:
 ```sh
 brew upgrade gh
 ```
+
+### Manual install
+1. Download the `*_macOS_amd64.tar.gz` file from the [releases page](https://github.com/github/homebrew-gh/releases/latest)
+2. `tar -xf gh_*_macOS_amd64.tar.gz`
+3. Copy the uncompressed `gh` somewhere to your PATH (e.g. `cp gh_*_macOS_amd64/bin/gh /usr/local/bin/`)
+
+## Install for Windows
+1. Download the `*.msi` installer from the [releases page](https://github.com/github/homebrew-gh/releases/latest)
+2. Run the installer
+
 ## Install for Linux
 ### Debian/Ubuntu Linux
 
@@ -28,9 +38,9 @@ _(Uninstall with `sudo yum remove gh`)_
 
 ### Other Linux
 
-1. Download the `_linux_amd64.tar.gz` file from the [releases page](https://github.com/github/homebrew-gh/releases/latest)
+1. Download the `*_linux_amd64.tar.gz` file from the [releases page](https://github.com/github/homebrew-gh/releases/latest)
 2. `tar -xf gh_*_linux_amd64.tar.gz`
-3. Copy the uncompressed `gh` somewhere on your `$PATH` (e.g. `sudo cp gh_*_linux_amd64/bin/gh /usr/local/bin/`)
+3. Copy the uncompressed `gh` somewhere to your PATH (e.g. `sudo cp gh_*_linux_amd64/bin/gh /usr/local/bin/`)
 
 _(Uninstall with `rm`)_
 
