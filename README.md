@@ -20,6 +20,12 @@ brew upgrade gh
 1. Download the `*.msi` installer from the [releases page](https://github.com/github/homebrew-gh/releases/latest)
 2. Run the installer
 
+### Uninstall from Windows
+1. Search for "remove programs" in the start menu
+2. Choose “Add or remove programs”
+3. Find “GitHub CLI” on the list
+4. Click on it and choose “Uninstall”
+
 ## Install for Linux
 ### Debian/Ubuntu Linux
 
