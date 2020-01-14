@@ -4,7 +4,7 @@ class Gh < Formula
   version "0.4.0"
 
   if OS.mac?
-    url "https://github.com/probablycorey/homebrew-gghh/releases/download/v0.4.0/gh_0.4.0_macOS_amd64.tar.gz"
+    url "https://github.com/github/homebrew-gh/releases/download/v0.4.0/gh_0.4.0_macOS_amd64.tar.gz"
     sha256 "85f9b895aab95c9882dfdb55193f9330514ab6e80777a972da04483c7a117010"
   elsif OS.linux?
     # TODO
