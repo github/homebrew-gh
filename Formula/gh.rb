@@ -2,21 +2,21 @@
 class Gh < Formula
   desc "GitHub CLI"
   homepage "https://github.com/cli/cli"
-  version "0.8.0"
+  version "0.9.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/cli/cli/releases/download/v0.8.0/gh_0.8.0_macOS_amd64.tar.gz"
-    sha256 "da388314df66f2c1763f5d6d94a1360ae3e71ce5e4077ce9f8919a385a457bc0"
+    url "https://github.com/cli/cli/releases/download/v0.9.0/gh_0.9.0_macOS_amd64.tar.gz"
+    sha256 "aa2216395b74437209bca15565ec31eb14b37e2205989f08920f71575df435c5"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/cli/cli/releases/download/v0.8.0/gh_0.8.0_linux_amd64.tar.gz"
-      sha256 "7eb2633f8360239362726ac4265ef07a900bdc3f90d0f3dc36d7d03bce072d52"
+      url "https://github.com/cli/cli/releases/download/v0.9.0/gh_0.9.0_linux_amd64.tar.gz"
+      sha256 "37224834848451dea214ffc49861821de5d5221e78faad82f9d9f3cc1ff833f0"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/cli/cli/releases/download/v0.8.0/gh_0.8.0_linux_arm64.tar.gz"
-        sha256 "d5762a0c0e4a398d04f9126d0496275234b63e2ff304c274808e435ebdc0f0e7"
+        url "https://github.com/cli/cli/releases/download/v0.9.0/gh_0.9.0_linux_arm64.tar.gz"
+        sha256 "6f8f9ec7f82ebb48b713ff50a5315fd2c667e274c45f293b50da5523c2b40759"
       else
       end
     end
@@ -28,8 +28,9 @@ class Gh < Formula
   end
 
   def install
-    system "make" if build.head?
+    system "make", "bin/gh", "manpages" if build.head?
     bin.install "bin/gh"
+    man1.install Dir["./share/man/man1/gh*.1"]
     (bash_completion/"gh.sh").write `#{bin}/gh completion -s bash`
     (zsh_completion/"_gh").write `#{bin}/gh completion -s zsh`
     (fish_completion/"gh.fish").write `#{bin}/gh completion -s fish`
