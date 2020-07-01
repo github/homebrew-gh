@@ -23,7 +23,7 @@ class Gh < Formula
   end
   
   head do
-    url "https://github.com/cli/cli.git"
+    url "https://github.com/cli/cli.git", :branch => "trunk"
     depends_on "go"
   end
 
