@@ -4,7 +4,7 @@ This is a Homebrew tap repository that provides the `gh` formula for GitHub CLI.
 ### Homebrew
 To install:
 ```sh
-brew install github/gh/gh
+brew install gh
 ```
 To upgrade:
 ```sh
