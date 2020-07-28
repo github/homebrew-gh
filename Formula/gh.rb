@@ -2,21 +2,21 @@
 class Gh < Formula
   desc "GitHub CLI"
   homepage "https://github.com/cli/cli"
-  version "0.11.0"
+  version "0.11.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/cli/cli/releases/download/v0.11.0/gh_0.11.0_macOS_amd64.tar.gz"
-    sha256 "e30ba748a0e0d3a155c93027616520593a40ad50711b59c61f8335badcc3f4bc"
+    url "https://github.com/cli/cli/releases/download/v0.11.1/gh_0.11.1_macOS_amd64.tar.gz"
+    sha256 "6634c0cce8eba7a3d394d90cec5af99f79c815704adf3cde81ea7394ce0fb440"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/cli/cli/releases/download/v0.11.0/gh_0.11.0_linux_amd64.tar.gz"
-      sha256 "11315438e03487b512462f3e7e26fa587bd589ad5764e863fef132014c5287da"
+      url "https://github.com/cli/cli/releases/download/v0.11.1/gh_0.11.1_linux_amd64.tar.gz"
+      sha256 "c9d652852841557652a336a064468c31593a3a1f9537ee0f4d2a9c2351166193"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/cli/cli/releases/download/v0.11.0/gh_0.11.0_linux_arm64.tar.gz"
-        sha256 "3b49e353d1ca47dd537221383e6aeb25275b8292fada21aff1a679662c9c5a24"
+        url "https://github.com/cli/cli/releases/download/v0.11.1/gh_0.11.1_linux_arm64.tar.gz"
+        sha256 "b8692b1ff617d33f1af3042c2763175451e9ea506725f7329e999c288946558b"
       else
       end
     end
